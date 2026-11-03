@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHUV - T-shirts, Hoodies & More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="announce">🚚 Cash on Delivery • Order easily on WhatsApp</div>
+
+  <header>
+    <div class="logo">SHUV</div>
+    <input id="search" placeholder="Search clothes...">
+    <button class="iconbtn" id="cartBtn">🛒<b id="count">0</b></button>
+  </header>
+
+  <nav class="nav">
+    <a href="#shop">Shop</a>
+    <a href="#offers">Offers</a>
+    <a href="#size">Size Guide</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>New Season Collection</h2>
+    <p>Premium prints. Comfortable fit. Delivered to you.</p>
+    <a href="#shop">Shop Now</a>
+  </section>
+
+  <div class="perks">
+    <div>✅<br>Best Print</div>
+    <div>💵<br>Cash on Delivery</div>
+    <div>🔄<br>Easy Exchange</div>
+    <div>🚚<br>Fast Delivery</div>
+  </div>
+
+  <section class="sale" id="offers">
+    <h3>⚡ Flash Sale – Up to 25% OFF</h3>
+    <p>Offer ends today in</p>
+    <div class="timer">
+      <div><b id="hh">00</b><small>Hours</small></div>
+      <div><b id="mm">00</b><small>Min</small></div>
+      <div><b id="ss">00</b><small>Sec</small></div>
+    </div>
+  </section>
+
+  <div id="shop"></div>
+  <div id="cats"></div>
+
+  <div class="filters">
+    <select id="sort">
+      <option value="">Sort: Featured</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+      <option value="rating">Top Rated</option>
+    </select>
+    <select id="price">
+      <option value="">All Prices</option>
+      <option value="1">Under Rs. 1000</option>
+      <option value="2">Rs. 1000 - 2000</option>
+      <option value="3">Above Rs. 2000</option>
+    </select>
+  </div>
+  <div id="countText"></div>
+
+  <main id="grid"></main>
+
+  <section class="section" id="size">
+    <h2>📏 Size Guide</h2>
+    <div class="tablewrap">
+      <table>
+        <tr><th>Size</th><th>Chest (inch)</th><th>Length (inch)</th></tr>
+        <tr><td>S</td><td>36</td><td>26</td></tr>
+        <tr><td>M</td><td>38</td><td>27</td></tr>
+        <tr><td>L</td><td>40</td><td>28</td></tr>
+        <tr><td>XL</td><td>42</td><td>29</td></tr>
+      </table>
+    </div>
+    <p class="note">Not sure about your size? Message us on WhatsApp and we will help you.</p>
+  </section>
+
+  <section class="section alt" id="reviews">
+    <h2>⭐ What Customers Say</h2>
+    <div class="revgrid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>"The print quality is amazing and the hoodie is very soft. Highly recommended!"</p>
+        <b>- Customer 1</b>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>"Fast delivery and the fit is perfect. Will order again."</p>
+        <b>- Customer 2</b>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★☆</div>
+        <p>"Good price for this quality. Cash on delivery made it easy."</p>
+        <b>- Customer 3</b>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+    <details>
+      <summary>How do I place an order?</summary>
+      <p>Choose a product, select size and color, add it to the cart, then tap "Order on WhatsApp". We will confirm your order there.</p>
+    </details>
+    <details>
+      <summary>Do you have Cash on Delivery?</summary>
+      <p>Yes. You pay when the product reaches you.</p>
+    </details>
+    <details>
+      <summary>Can I exchange if the size is wrong?</summary>
+      <p>Yes. Message us on WhatsApp and we will arrange an exchange.</p>
+    </details>
+    <details>
+      <summary>How long does delivery take?</summary>
+      <p>Delivery time depends on your location. We will tell you when we confirm the order.</p>
+    </details>
+  </section>
+
+  <section class="section alt" id="about">
+    <h2>About SHUV</h2>
+    <p class="about">SHUV is a clothing brand selling T-shirts, hoodies, sweaters, pants and jackets with the best print and comfortable fabric. Our goal is simple: good style at a fair price, delivered to your door.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>📞 Contact Us</h2>
+    <div class="contact">
+      <a href="#" id="waLink" target="_blank">💬 WhatsApp</a>
+      <a href="https://instagram.com/yourpage" target="_blank">📸 Instagram</a>
+      <a href="https://facebook.com/yourpage" target="_blank">👍 Facebook</a>
+    </div>
+  </section>
+
+  <footer>© 2026 SHUV. All rights reserved.</footer>
+
+  <div class="overlay" id="modal"><div class="sheet" id="sheet"></div></div>
+
+  <aside id="cart">
+    <div class="ctop">
+      <h2>Your Cart</h2>
+      <button id="close">✕</button>
+    </div>
+    <div id="items"></div>
+    <div class="total">Total: Rs. <span id="total">0</span></div>
+    <input id="cname" placeholder="Your name">
+    <input id="caddr" placeholder="Delivery address">
+    <button class="btn wa" id="order">Order on WhatsApp</button>
+  </aside>
+
+  <a href="#" id="floatwa" target="_blank">💬</a>
+  <button id="toTop">↑</button>
+  <div id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
